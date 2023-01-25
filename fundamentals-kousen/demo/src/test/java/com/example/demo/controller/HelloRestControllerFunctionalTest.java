@@ -14,6 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class HelloRestControllerFunctionalTest {
 
+    /*
+     * Note that the template could instead be declared as an argument of the test method(s).
+     * e.g.
+     * @Test
+     * public void greetWithName(@Autowired TestRestTemplate template) {
+     *     ...
+     * }
+     */
     @Autowired
     private TestRestTemplate template;
 
